@@ -2,8 +2,9 @@
 <div id="view-content">
 	<p>View script for controller <b>Index</b> and script/action name <b>show</b></p>
         <?php
-        foreach ($this->post as $lista){
-            echo "Post: ".$lista['title']."<br>";
+        
+        foreach ($this->comments as $lista){
+            echo "Comentário: ".$lista['name']." pertence ao post: ".$lista['post_id']."<br>";
         }
         ?>
 </div>

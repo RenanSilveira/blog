@@ -10,7 +10,7 @@ class Application_Model_Comments extends Zend_Db_Table_Abstract {
     protected $_referenceMap = array(
         array(
             'columns' => 'post_id',
-            'refTableClass' => 'Posts',
+            'refTableClass' => 'Application_Model_Posts',
             'refColumns' => 'id'
         )
     );
